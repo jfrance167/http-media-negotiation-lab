@@ -1,0 +1,2213 @@
+{
+  "version": 1,
+  "results": [
+    {
+      "id": "absent-honor",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "TIED_BEST",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "ABSENT_DEFAULT",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": 1000,
+          "acceptable": true
+        },
+        {
+          "id": "json",
+          "match": "ABSENT_DEFAULT",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": 1000,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "html",
+        "json"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "html",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "absent",
+          "ranges": []
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          },
+          {
+            "id": "json",
+            "type": "application",
+            "subtype": "json",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "absent-ignore",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "TIED_BEST",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "ABSENT_DEFAULT",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": 1000,
+          "acceptable": true
+        },
+        {
+          "id": "json",
+          "match": "ABSENT_DEFAULT",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": 1000,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "html",
+        "json"
+      ],
+      "handling": "IGNORE_PREFERENCES",
+      "selected_id": "html",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "absent",
+          "ranges": []
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          },
+          {
+            "id": "json",
+            "type": "application",
+            "subtype": "json",
+            "parameters": []
+          }
+        ],
+        "server_policy": "ignore",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "absent-unknown-policy",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "UNKNOWN_SERVER_POLICY"
+      ],
+      "preference": "TIED_BEST",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "ABSENT_DEFAULT",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": 1000,
+          "acceptable": true
+        },
+        {
+          "id": "json",
+          "match": "ABSENT_DEFAULT",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": 1000,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "html",
+        "json"
+      ],
+      "handling": "UNSUPPORTED_SERVER_POLICY",
+      "selected_id": null,
+      "hypothetical_status": null,
+      "declaration": {
+        "accept": {
+          "state": "absent",
+          "ranges": []
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          },
+          {
+            "id": "json",
+            "type": "application",
+            "subtype": "json",
+            "parameters": []
+          }
+        ],
+        "server_policy": "unknown",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "empty-honor",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "NONE",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "UNMATCHED",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": 0,
+          "acceptable": false
+        }
+      ],
+      "best_candidate_ids": [],
+      "handling": "ASSUMED_REJECT",
+      "selected_id": null,
+      "hypothetical_status": 406,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": []
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "empty-ignore",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "NONE",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "UNMATCHED",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": 0,
+          "acceptable": false
+        }
+      ],
+      "best_candidate_ids": [],
+      "handling": "IGNORE_PREFERENCES",
+      "selected_id": "html",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": []
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          }
+        ],
+        "server_policy": "ignore",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "empty-unknown-policy",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "UNKNOWN_SERVER_POLICY"
+      ],
+      "preference": "NONE",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "UNMATCHED",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": 0,
+          "acceptable": false
+        }
+      ],
+      "best_candidate_ids": [],
+      "handling": "UNSUPPORTED_SERVER_POLICY",
+      "selected_id": null,
+      "hypothetical_status": null,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": []
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          }
+        ],
+        "server_policy": "unknown",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "unknown-honor",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "UNKNOWN_ACCEPT"
+      ],
+      "preference": "UNKNOWN",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "UNKNOWN_CONTEXT",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": null,
+          "acceptable": null
+        }
+      ],
+      "best_candidate_ids": null,
+      "handling": "UNSUPPORTED_CONTEXT",
+      "selected_id": null,
+      "hypothetical_status": null,
+      "declaration": {
+        "accept": {
+          "state": "unknown",
+          "ranges": []
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "unknown-ignore",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "UNKNOWN_ACCEPT"
+      ],
+      "preference": "UNKNOWN",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "UNKNOWN_CONTEXT",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": null,
+          "acceptable": null
+        }
+      ],
+      "best_candidate_ids": null,
+      "handling": "UNSUPPORTED_CONTEXT",
+      "selected_id": null,
+      "hypothetical_status": null,
+      "declaration": {
+        "accept": {
+          "state": "unknown",
+          "ranges": []
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          }
+        ],
+        "server_policy": "ignore",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "feature-absent",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "UNSUPPORTED_FEATURE"
+      ],
+      "preference": "UNKNOWN",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "UNKNOWN_CONTEXT",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": null,
+          "acceptable": null
+        }
+      ],
+      "best_candidate_ids": null,
+      "handling": "UNSUPPORTED_CONTEXT",
+      "selected_id": null,
+      "hypothetical_status": null,
+      "declaration": {
+        "accept": {
+          "state": "absent",
+          "ranges": []
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": [
+          "language"
+        ]
+      }
+    },
+    {
+      "id": "parameter-absent",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "UNSUPPORTED_PARAMETER_CONTEXT"
+      ],
+      "preference": "UNKNOWN",
+      "candidates": [
+        {
+          "id": "plain",
+          "match": "UNKNOWN_CONTEXT",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": null,
+          "acceptable": null
+        }
+      ],
+      "best_candidate_ids": null,
+      "handling": "UNSUPPORTED_CONTEXT",
+      "selected_id": null,
+      "hypothetical_status": null,
+      "declaration": {
+        "accept": {
+          "state": "absent",
+          "ranges": []
+        },
+        "candidates": [
+          {
+            "id": "plain",
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [
+              {
+                "name": "charset",
+                "value": "utf-8"
+              }
+            ]
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "wildcard-parameter",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "UNSUPPORTED_PARAMETER_CONTEXT"
+      ],
+      "preference": "UNKNOWN",
+      "candidates": [
+        {
+          "id": "flowed",
+          "match": "UNKNOWN_CONTEXT",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": null,
+          "acceptable": null
+        }
+      ],
+      "best_candidate_ids": null,
+      "handling": "UNSUPPORTED_CONTEXT",
+      "selected_id": null,
+      "hypothetical_status": null,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "*",
+              "parameters": [
+                {
+                  "name": "format",
+                  "value": "flowed"
+                }
+              ],
+              "q": "1"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "flowed",
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [
+              {
+                "name": "format",
+                "value": "flowed"
+              }
+            ]
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "other-type-parameter",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "UNSUPPORTED_PARAMETER_CONTEXT"
+      ],
+      "preference": "UNKNOWN",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "UNKNOWN_CONTEXT",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": null,
+          "acceptable": null
+        }
+      ],
+      "best_candidate_ids": null,
+      "handling": "UNSUPPORTED_CONTEXT",
+      "selected_id": null,
+      "hypothetical_status": null,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": "1"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": [
+              {
+                "name": "format",
+                "value": "fixed"
+              }
+            ]
+          }
+        ],
+        "server_policy": "ignore",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "unknown-format-value",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "UNSUPPORTED_PARAMETER_CONTEXT"
+      ],
+      "preference": "UNKNOWN",
+      "candidates": [
+        {
+          "id": "plain",
+          "match": "UNKNOWN_CONTEXT",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": null,
+          "acceptable": null
+        }
+      ],
+      "best_candidate_ids": null,
+      "handling": "UNSUPPORTED_CONTEXT",
+      "selected_id": null,
+      "hypothetical_status": null,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "plain",
+              "parameters": [],
+              "q": "1"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "plain",
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [
+              {
+                "name": "format",
+                "value": "novel"
+              }
+            ]
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "combined-global-reasons",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "UNKNOWN_ACCEPT",
+        "UNSUPPORTED_FEATURE",
+        "UNSUPPORTED_PARAMETER_CONTEXT"
+      ],
+      "preference": "UNKNOWN",
+      "candidates": [
+        {
+          "id": "plain",
+          "match": "UNKNOWN_CONTEXT",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": null,
+          "acceptable": null
+        }
+      ],
+      "best_candidate_ids": null,
+      "handling": "UNSUPPORTED_CONTEXT",
+      "selected_id": null,
+      "hypothetical_status": null,
+      "declaration": {
+        "accept": {
+          "state": "unknown",
+          "ranges": []
+        },
+        "candidates": [
+          {
+            "id": "plain",
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [
+              {
+                "name": "charset",
+                "value": "utf-8"
+              }
+            ]
+          }
+        ],
+        "server_policy": "unknown",
+        "unsupported_features": [
+          "language"
+        ]
+      }
+    },
+    {
+      "id": "duplicate-conflict",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "AMBIGUOUS_QUALITY"
+      ],
+      "preference": "UNKNOWN",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "AMBIGUOUS_QUALITY",
+          "governing_range_indices": [
+            0,
+            1
+          ],
+          "specificity": 2,
+          "quality_milli": null,
+          "acceptable": null
+        }
+      ],
+      "best_candidate_ids": null,
+      "handling": "UNSUPPORTED_AMBIGUOUS_QUALITY",
+      "selected_id": null,
+      "hypothetical_status": null,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": "0"
+            },
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": "1"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "duplicate-equal",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "UNIQUE_BEST",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0,
+            1
+          ],
+          "specificity": 2,
+          "quality_milli": 500,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "html"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "html",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": "0.5"
+            },
+            {
+              "type": "TEXT",
+              "subtype": "HTML",
+              "parameters": [],
+              "q": "0.500"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "exact-zero-overrides-wildcard",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "UNIQUE_BEST",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            1
+          ],
+          "specificity": 2,
+          "quality_milli": 0,
+          "acceptable": false
+        },
+        {
+          "id": "json",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 0,
+          "quality_milli": 1000,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "json"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "json",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "*",
+              "subtype": "*",
+              "parameters": [],
+              "q": "1"
+            },
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": "0"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          },
+          {
+            "id": "json",
+            "type": "application",
+            "subtype": "json",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "specificity-before-quality",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "UNIQUE_BEST",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            1
+          ],
+          "specificity": 2,
+          "quality_milli": 200,
+          "acceptable": true
+        },
+        {
+          "id": "plain",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 1,
+          "quality_milli": 900,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "plain"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "plain",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "*",
+              "parameters": [],
+              "q": "0.9"
+            },
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": "0.2"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          },
+          {
+            "id": "plain",
+            "type": "text",
+            "subtype": "plain",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "format-tier",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "UNIQUE_BEST",
+      "candidates": [
+        {
+          "id": "flowed",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            1
+          ],
+          "specificity": 3,
+          "quality_milli": 1000,
+          "acceptable": true
+        },
+        {
+          "id": "fixed",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 2,
+          "quality_milli": 700,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "flowed"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "flowed",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "plain",
+              "parameters": [],
+              "q": "0.7"
+            },
+            {
+              "type": "text",
+              "subtype": "plain",
+              "parameters": [
+                {
+                  "name": "format",
+                  "value": "flowed"
+                }
+              ],
+              "q": null
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "flowed",
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [
+              {
+                "name": "format",
+                "value": "flowed"
+              }
+            ]
+          },
+          {
+            "id": "fixed",
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [
+              {
+                "name": "format",
+                "value": "fixed"
+              }
+            ]
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "no-implicit-format",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "NONE",
+      "candidates": [
+        {
+          "id": "plain",
+          "match": "UNMATCHED",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": 0,
+          "acceptable": false
+        }
+      ],
+      "best_candidate_ids": [],
+      "handling": "ASSUMED_REJECT",
+      "selected_id": null,
+      "hypothetical_status": 406,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "plain",
+              "parameters": [
+                {
+                  "name": "format",
+                  "value": "fixed"
+                }
+              ],
+              "q": "0.4"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "plain",
+            "type": "text",
+            "subtype": "plain",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "zero-trailing-dot",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "NONE",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 2,
+          "quality_milli": 0,
+          "acceptable": false
+        }
+      ],
+      "best_candidate_ids": [],
+      "handling": "ASSUMED_REJECT",
+      "selected_id": null,
+      "hypothetical_status": 406,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": "0."
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "one-three-zeroes",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "UNIQUE_BEST",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 2,
+          "quality_milli": 1000,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "html"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "html",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": "1.000"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "exact-thousandths",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "UNIQUE_BEST",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 2,
+          "quality_milli": 333,
+          "acceptable": true
+        },
+        {
+          "id": "json",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            1
+          ],
+          "specificity": 2,
+          "quality_milli": 334,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "json"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "json",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": "0.333"
+            },
+            {
+              "type": "application",
+              "subtype": "json",
+              "parameters": [],
+              "q": "0.334"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          },
+          {
+            "id": "json",
+            "type": "application",
+            "subtype": "json",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "default-one-equivalence",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "TIED_BEST",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 2,
+          "quality_milli": 1000,
+          "acceptable": true
+        },
+        {
+          "id": "json",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            1
+          ],
+          "specificity": 2,
+          "quality_milli": 1000,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "html",
+        "json"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "html",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": null
+            },
+            {
+              "type": "application",
+              "subtype": "json",
+              "parameters": [],
+              "q": "1"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          },
+          {
+            "id": "json",
+            "type": "application",
+            "subtype": "json",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "literal-plus-subtype",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "UNIQUE_BEST",
+      "candidates": [
+        {
+          "id": "json",
+          "match": "UNMATCHED",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": 0,
+          "acceptable": false
+        },
+        {
+          "id": "problem",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 2,
+          "quality_milli": 800,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "problem"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "problem",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "application",
+              "subtype": "problem+json",
+              "parameters": [],
+              "q": "0.8"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "json",
+            "type": "application",
+            "subtype": "json",
+            "parameters": []
+          },
+          {
+            "id": "problem",
+            "type": "application",
+            "subtype": "problem+json",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "all-wildcard",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "UNIQUE_BEST",
+      "candidates": [
+        {
+          "id": "image",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 0,
+          "quality_milli": 400,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "image"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "image",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "*",
+              "subtype": "*",
+              "parameters": [],
+              "q": "0.4"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "image",
+            "type": "image",
+            "subtype": "jpeg",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "type-wildcard",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "UNIQUE_BEST",
+      "candidates": [
+        {
+          "id": "plain",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 1,
+          "quality_milli": 600,
+          "acceptable": true
+        },
+        {
+          "id": "image",
+          "match": "UNMATCHED",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": 0,
+          "acceptable": false
+        }
+      ],
+      "best_candidate_ids": [
+        "plain"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "plain",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "*",
+              "parameters": [],
+              "q": "0.6"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "plain",
+            "type": "text",
+            "subtype": "plain",
+            "parameters": []
+          },
+          {
+            "id": "image",
+            "type": "image",
+            "subtype": "jpeg",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "case-type-subtype",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "UNIQUE_BEST",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 2,
+          "quality_milli": 700,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "html"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "html",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "TeXt",
+              "subtype": "HtMl",
+              "parameters": [],
+              "q": "0.7"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "TEXT",
+            "subtype": "HTML",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "case-format",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "UNIQUE_BEST",
+      "candidates": [
+        {
+          "id": "flowed",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 3,
+          "quality_milli": 800,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "flowed"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "flowed",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "TEXT",
+              "subtype": "PLAIN",
+              "parameters": [
+                {
+                  "name": "FORMAT",
+                  "value": "FLOWED"
+                }
+              ],
+              "q": "0.8"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "flowed",
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [
+              {
+                "name": "Format",
+                "value": "Flowed"
+              }
+            ]
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "no-match",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "NONE",
+      "candidates": [
+        {
+          "id": "json",
+          "match": "UNMATCHED",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": 0,
+          "acceptable": false
+        }
+      ],
+      "best_candidate_ids": [],
+      "handling": "ASSUMED_REJECT",
+      "selected_id": null,
+      "hypothetical_status": 406,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": "1"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "json",
+            "type": "application",
+            "subtype": "json",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "format-mismatch",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "NONE",
+      "candidates": [
+        {
+          "id": "flowed",
+          "match": "UNMATCHED",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": 0,
+          "acceptable": false
+        }
+      ],
+      "best_candidate_ids": [],
+      "handling": "ASSUMED_REJECT",
+      "selected_id": null,
+      "hypothetical_status": 406,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "plain",
+              "parameters": [
+                {
+                  "name": "format",
+                  "value": "fixed"
+                }
+              ],
+              "q": "0.4"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "flowed",
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [
+              {
+                "name": "format",
+                "value": "flowed"
+              }
+            ]
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "two-format-values",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "UNIQUE_BEST",
+      "candidates": [
+        {
+          "id": "flowed",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 3,
+          "quality_milli": 700,
+          "acceptable": true
+        },
+        {
+          "id": "fixed",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            1
+          ],
+          "specificity": 3,
+          "quality_milli": 300,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "flowed"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "flowed",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "plain",
+              "parameters": [
+                {
+                  "name": "format",
+                  "value": "flowed"
+                }
+              ],
+              "q": "0.7"
+            },
+            {
+              "type": "text",
+              "subtype": "plain",
+              "parameters": [
+                {
+                  "name": "format",
+                  "value": "fixed"
+                }
+              ],
+              "q": "0.3"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "flowed",
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [
+              {
+                "name": "format",
+                "value": "flowed"
+              }
+            ]
+          },
+          {
+            "id": "fixed",
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [
+              {
+                "name": "format",
+                "value": "fixed"
+              }
+            ]
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "plain-range-matches-parameterized",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "UNIQUE_BEST",
+      "candidates": [
+        {
+          "id": "flowed",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 2,
+          "quality_milli": 250,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "flowed"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "flowed",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "plain",
+              "parameters": [],
+              "q": "0.25"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "flowed",
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [
+              {
+                "name": "format",
+                "value": "flowed"
+              }
+            ]
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "equal-quality-tier-tie",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "TIED_BEST",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 2,
+          "quality_milli": 500,
+          "acceptable": true
+        },
+        {
+          "id": "json",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            1
+          ],
+          "specificity": 0,
+          "quality_milli": 500,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "html",
+        "json"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "html",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": "0.5"
+            },
+            {
+              "type": "*",
+              "subtype": "*",
+              "parameters": [],
+              "q": "0.5"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          },
+          {
+            "id": "json",
+            "type": "application",
+            "subtype": "json",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "candidate-order-tie",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "TIED_BEST",
+      "candidates": [
+        {
+          "id": "json",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            1
+          ],
+          "specificity": 0,
+          "quality_milli": 500,
+          "acceptable": true
+        },
+        {
+          "id": "html",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 2,
+          "quality_milli": 500,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "json",
+        "html"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "json",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": "0.5"
+            },
+            {
+              "type": "*",
+              "subtype": "*",
+              "parameters": [],
+              "q": "0.5"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "json",
+            "type": "application",
+            "subtype": "json",
+            "parameters": []
+          },
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "range-order-independent",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "UNIQUE_BEST",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 2,
+          "quality_milli": 200,
+          "acceptable": true
+        },
+        {
+          "id": "plain",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            1
+          ],
+          "specificity": 1,
+          "quality_milli": 900,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "plain"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "plain",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": "0.2"
+            },
+            {
+              "type": "text",
+              "subtype": "*",
+              "parameters": [],
+              "q": "0.9"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          },
+          {
+            "id": "plain",
+            "type": "text",
+            "subtype": "plain",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "lower-tier-conflict-irrelevant",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "UNIQUE_BEST",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            2
+          ],
+          "specificity": 2,
+          "quality_milli": 800,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": [
+        "html"
+      ],
+      "handling": "ASSUMED_SELECT",
+      "selected_id": "html",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "*",
+              "parameters": [],
+              "q": "0.1"
+            },
+            {
+              "type": "text",
+              "subtype": "*",
+              "parameters": [],
+              "q": "0.9"
+            },
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": "0.8"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          }
+        ],
+        "server_policy": "honor",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "conflict-preserves-other-math",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "AMBIGUOUS_QUALITY"
+      ],
+      "preference": "UNKNOWN",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "AMBIGUOUS_QUALITY",
+          "governing_range_indices": [
+            0,
+            1
+          ],
+          "specificity": 2,
+          "quality_milli": null,
+          "acceptable": null
+        },
+        {
+          "id": "json",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            2
+          ],
+          "specificity": 2,
+          "quality_milli": 1000,
+          "acceptable": true
+        }
+      ],
+      "best_candidate_ids": null,
+      "handling": "UNSUPPORTED_AMBIGUOUS_QUALITY",
+      "selected_id": null,
+      "hypothetical_status": null,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": "0"
+            },
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": "1"
+            },
+            {
+              "type": "application",
+              "subtype": "json",
+              "parameters": [],
+              "q": "1"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          },
+          {
+            "id": "json",
+            "type": "application",
+            "subtype": "json",
+            "parameters": []
+          }
+        ],
+        "server_policy": "ignore",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "zero-ignored-server",
+      "status": "SUPPORTED",
+      "reasons": [],
+      "preference": "NONE",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 2,
+          "quality_milli": 0,
+          "acceptable": false
+        }
+      ],
+      "best_candidate_ids": [],
+      "handling": "IGNORE_PREFERENCES",
+      "selected_id": "html",
+      "hypothetical_status": 200,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": "0"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          }
+        ],
+        "server_policy": "ignore",
+        "unsupported_features": []
+      }
+    },
+    {
+      "id": "unknown-server-known-unique",
+      "status": "UNSUPPORTED",
+      "reasons": [
+        "UNKNOWN_SERVER_POLICY"
+      ],
+      "preference": "UNIQUE_BEST",
+      "candidates": [
+        {
+          "id": "html",
+          "match": "MATCHED",
+          "governing_range_indices": [
+            0
+          ],
+          "specificity": 2,
+          "quality_milli": 1000,
+          "acceptable": true
+        },
+        {
+          "id": "json",
+          "match": "UNMATCHED",
+          "governing_range_indices": [],
+          "specificity": null,
+          "quality_milli": 0,
+          "acceptable": false
+        }
+      ],
+      "best_candidate_ids": [
+        "html"
+      ],
+      "handling": "UNSUPPORTED_SERVER_POLICY",
+      "selected_id": null,
+      "hypothetical_status": null,
+      "declaration": {
+        "accept": {
+          "state": "present",
+          "ranges": [
+            {
+              "type": "text",
+              "subtype": "html",
+              "parameters": [],
+              "q": "1"
+            }
+          ]
+        },
+        "candidates": [
+          {
+            "id": "html",
+            "type": "text",
+            "subtype": "html",
+            "parameters": []
+          },
+          {
+            "id": "json",
+            "type": "application",
+            "subtype": "json",
+            "parameters": []
+          }
+        ],
+        "server_policy": "unknown",
+        "unsupported_features": []
+      }
+    }
+  ],
+  "assumptions": [
+    "Offline declared media preferences only; no actual headers, representations or HTTP responses.",
+    "Parameters are explicit text/plain format declarations; no implicit defaults or body processing.",
+    "Duplicate-quality ambiguity and honor/ignore/first-offer selection are lab policies, not universal server behavior."
+  ]
+}

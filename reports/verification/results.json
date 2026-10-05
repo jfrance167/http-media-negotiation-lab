@@ -1,0 +1,183 @@
+{
+  "runtime": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "checks": [
+    {
+      "name": "tests-normal",
+      "arguments": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true
+    },
+    {
+      "name": "tests-optimized",
+      "arguments": [
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true
+    },
+    {
+      "name": "compile",
+      "arguments": [
+        "-m",
+        "compileall",
+        "-q",
+        "medialab",
+        "tests",
+        "tools"
+      ],
+      "exit_code": 1,
+      "expected_exit": 0,
+      "passed": false
+    },
+    {
+      "name": "bandit",
+      "arguments": [
+        "-m",
+        "bandit",
+        "-r",
+        "medialab",
+        "tests",
+        "tools",
+        "-f",
+        "json"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true
+    },
+    {
+      "name": "quality-before-specificity",
+      "arguments": [
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "passed": true
+    },
+    {
+      "name": "zero-made-eligible",
+      "arguments": [
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "passed": true
+    },
+    {
+      "name": "omit-format-tier",
+      "arguments": [
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "passed": true
+    },
+    {
+      "name": "tier-breaks-quality-tie",
+      "arguments": [
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "passed": true
+    },
+    {
+      "name": "tests-restored",
+      "arguments": [
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "passed": true
+    },
+    {
+      "name": "demo-json",
+      "arguments": [
+        "-m",
+        "medialab",
+        "fixtures/cases.json",
+        "--format",
+        "json",
+        "--output",
+        "C:\\Users\\Jake\\OneDrive - Alfred State College\\Documents\\New project\\http-media-negotiation-lab\\reports\\verification\\demo.json"
+      ],
+      "exit_code": 2,
+      "expected_exit": 2,
+      "passed": true
+    },
+    {
+      "name": "demo-markdown",
+      "arguments": [
+        "-m",
+        "medialab",
+        "fixtures/cases.json",
+        "--format",
+        "markdown",
+        "--output",
+        "C:\\Users\\Jake\\OneDrive - Alfred State College\\Documents\\New project\\http-media-negotiation-lab\\reports\\verification\\demo.md"
+      ],
+      "exit_code": 2,
+      "expected_exit": 2,
+      "passed": true
+    }
+  ],
+  "model_restored": true,
+  "hashes": {
+    "medialab\\contracts.py": "a869d7a2088fa18c45f8870669cbb21db6b7a20f42ae34ce877f922de953cbf3",
+    "medialab\\model.py": "8726c4af15f41d46b4aaf4cbafe352678d21d5485452193445134d98d53f9951",
+    "medialab\\report.py": "f6b5e14d17d317edb0289cfa2f096cc19f7e59dd91ab1e5a07a3b28e20a45a87",
+    "medialab\\__init__.py": "c4732ae3b834ae19c851293d621fff90bec29aaf9515b38d5f5ec918a3b6af00",
+    "medialab\\__main__.py": "931a48d15f82af0654c031f535ec3343bb2027371156374d92d0aa707b5bd8e5",
+    "tests\\test_lab.py": "cb492f39d4d93e3a39d9c2ee5f7363c926c3938cebbf05e4e10d0ff556f7c352",
+    "tools\\verify.py": "b918236bf70af081571fc9422c41556fe8de79160d1bfd0066c30c0751684e7a",
+    "fixtures\\cases.json": "bfb61ddfe12ac04083c17577cc0ad005061eb42f61119449dcd33be796dd4b91",
+    "fixtures\\expected.json": "bb1b1aaf6e094c24b3b1de1994c884cd8a0112dcbb96f5e1227ea1da8d039231",
+    "CONTRACT.md": "c7d6efd8b04a5be25f25a38ef6b318295c58aa54920d02d8104259aa577c8696"
+  },
+  "passed": false
+}

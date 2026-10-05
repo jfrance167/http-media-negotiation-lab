@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-05",
+  "phase": "before-application-code",
+  "supported": 27,
+  "unsupported": 13,
+  "expectations": "Full independently specified reports; no model existed or was run",
+  "cases": 40,
+  "records": [
+    {
+      "bytes": 7067,
+      "sha256": "1BD50A00314DCF266C719A081E5B033D55ED5C37867CE58B0430C28DA5325423",
+      "path": "CONTRACT.md"
+    },
+    {
+      "bytes": 24344,
+      "sha256": "BFB61DDFE12AC04083C17577CC0AD005061EB42F61119449DCD33BE796DD4B91",
+      "path": "fixtures/cases.json"
+    },
+    {
+      "bytes": 51694,
+      "sha256": "BB1B1AAF6E094C24B3B1DE1994C884CD8A0112DCBB96F5E1227EA1DA8D039231",
+      "path": "fixtures/expected.json"
+    }
+  ]
+}

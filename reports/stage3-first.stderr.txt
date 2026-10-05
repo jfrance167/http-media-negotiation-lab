@@ -1,0 +1,169 @@
+test_actual_cli_and_fresh_alias_paths (test_lab.DeliveryTests.test_actual_cli_and_fresh_alias_paths) ... ERROR
+test_actual_empty_output_and_nul (test_lab.DeliveryTests.test_actual_empty_output_and_nul) ... FAIL
+test_actual_invalid_and_argument_diagnostics (test_lab.DeliveryTests.test_actual_invalid_and_argument_diagnostics) ... FAIL
+test_actual_process_stream_boundaries (test_lab.DeliveryTests.test_actual_process_stream_boundaries) ... 
+  test_actual_process_stream_boundaries (test_lab.DeliveryTests.test_actual_process_stream_boundaries) (name='report-stdout') ... FAIL
+  test_actual_process_stream_boundaries (test_lab.DeliveryTests.test_actual_process_stream_boundaries) (name='help-stdout') ... FAIL
+test_checked_help_and_redirection_seams (test_lab.DeliveryTests.test_checked_help_and_redirection_seams) ... ok
+test_checked_stdout_and_diagnostics_seams (test_lab.DeliveryTests.test_checked_stdout_and_diagnostics_seams) ... ok
+test_fresh_short_flush_close_cleanup_seams (test_lab.DeliveryTests.test_fresh_short_flush_close_cleanup_seams) ... ok
+test_reports_inert_and_bounded (test_lab.DeliveryTests.test_reports_inert_and_bounded) ... ERROR
+test_alias_cycle_and_tree_bounds (test_lab.ModelTests.test_alias_cycle_and_tree_bounds) ... ok
+test_capability_inventory (test_lab.ModelTests.test_capability_inventory) ... ok
+test_frozen_labels (test_lab.ModelTests.test_frozen_labels) ... ok
+test_independent_quality_table (test_lab.ModelTests.test_independent_quality_table) ... ok
+test_maximum_field_cardinality_stress (test_lab.ModelTests.test_maximum_field_cardinality_stress) ... ERROR
+test_no_native_hooks (test_lab.ModelTests.test_no_native_hooks) ... ok
+test_parser_authority_and_bounds (test_lab.ModelTests.test_parser_authority_and_bounds) ... ok
+test_quality_spellings (test_lab.ModelTests.test_quality_spellings) ... ok
+test_schema_and_fresh_provenance (test_lab.ModelTests.test_schema_and_fresh_provenance) ... ok
+test_schema_counts_identifiers_and_parameters (test_lab.ModelTests.test_schema_counts_identifiers_and_parameters) ... ok
+test_whole_validation_before_shortcuts (test_lab.ModelTests.test_whole_validation_before_shortcuts) ... ok
+
+======================================================================
+ERROR: test_actual_cli_and_fresh_alias_paths (test_lab.DeliveryTests.test_actual_cli_and_fresh_alias_paths)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\tests\test_lab.py", line 316, in test_actual_cli_and_fresh_alias_paths
+    source.write_text(json.dumps(one(3)), encoding="utf-8")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 555, in write_text
+    return PathBase.write_text(self, data, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 651, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Jake\\AppData\\Local\\Packages\\sandbox.{6d03fe99-fadf-43b7-8d72-91203a3bc91f}\\AC\\Temp\\tmp5f3ijmmx\\input.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jake\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 631, in _rmtree_unsafe
+    os.rmdir(path)
+    ~~~~~~~~^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Jake\\AppData\\Local\\Packages\\sandbox.{6d03fe99-fadf-43b7-8d72-91203a3bc91f}\\AC\\Temp\\tmp5f3ijmmx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\tests\test_lab.py", line 314, in test_actual_cli_and_fresh_alias_paths
+    with tempfile.TemporaryDirectory() as directory:
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Jake\AppData\Local\Programs\Python\Python313\Lib\tempfile.py", line 951, in __exit__
+    self.cleanup()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Jake\AppData\Local\Programs\Python\Python313\Lib\tempfile.py", line 955, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\AppData\Local\Programs\Python\Python313\Lib\tempfile.py", line 935, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 790, in rmtree
+    return _rmtree_unsafe(path, onexc)
+  File "C:\Users\Jake\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.rmdir, path, err)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\AppData\Local\Programs\Python\Python313\Lib\tempfile.py", line 907, in onexc
+    _resetperms(path)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\Jake\AppData\Local\Programs\Python\Python313\Lib\tempfile.py", line 287, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\AppData\Local\Programs\Python\Python313\Lib\tempfile.py", line 276, in _dont_follow_symlinks
+    func(path, *args, follow_symlinks=False)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Jake\\AppData\\Local\\Packages\\sandbox.{6d03fe99-fadf-43b7-8d72-91203a3bc91f}\\AC\\Temp\\tmp5f3ijmmx'
+
+======================================================================
+ERROR: test_reports_inert_and_bounded (test_lab.DeliveryTests.test_reports_inert_and_bounded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\tests\test_lab.py", line 299, in test_reports_inert_and_bounded
+    encoded = report.encode(evaluate(document), "markdown")
+                            ~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\model.py", line 112, in evaluate
+    validate(document)
+    ~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 208, in validate
+    _media(item, True)
+    ~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 180, in _media
+    raise Invalid("WILDCARD_SHAPE")
+medialab.contracts.Invalid: WILDCARD_SHAPE
+
+======================================================================
+ERROR: test_maximum_field_cardinality_stress (test_lab.ModelTests.test_maximum_field_cardinality_stress)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\tests\test_lab.py", line 257, in test_maximum_field_cardinality_stress
+    evaluated = evaluate(parse(raw))
+                         ~~~~~^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 93, in parse
+    raise Invalid("INPUT_LIMIT")
+medialab.contracts.Invalid: INPUT_LIMIT
+
+======================================================================
+FAIL: test_actual_empty_output_and_nul (test_lab.DeliveryTests.test_actual_empty_output_and_nul)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\tests\test_lab.py", line 334, in test_actual_empty_output_and_nul
+    self.assertEqual((result.returncode, result.stdout, result.stderr),
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                     (1, b"", b"medialab: INVALID_OUTPUT_PATH\n"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Tuples differ: (1, b'', b'medialab: INVALID_OUTPUT_PATH\r\n') != (1, b'', b'medialab: INVALID_OUTPUT_PATH\n')
+
+First differing element 2:
+b'medialab: INVALID_OUTPUT_PATH\r\n'
+b'medialab: INVALID_OUTPUT_PATH\n'
+
+- (1, b'', b'medialab: INVALID_OUTPUT_PATH\r\n')
+?                                          --
+
++ (1, b'', b'medialab: INVALID_OUTPUT_PATH\n')
+
+======================================================================
+FAIL: test_actual_invalid_and_argument_diagnostics (test_lab.DeliveryTests.test_actual_invalid_and_argument_diagnostics)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\tests\test_lab.py", line 379, in test_actual_invalid_and_argument_diagnostics
+    self.assertEqual((result.returncode, result.stdout, result.stderr),
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                     (2, b"", b"medialab: ARGUMENT_ERROR\n"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Tuples differ: (2, b'', b'medialab: ARGUMENT_ERROR\r\n') != (2, b'', b'medialab: ARGUMENT_ERROR\n')
+
+First differing element 2:
+b'medialab: ARGUMENT_ERROR\r\n'
+b'medialab: ARGUMENT_ERROR\n'
+
+- (2, b'', b'medialab: ARGUMENT_ERROR\r\n')
+?                                     --
+
++ (2, b'', b'medialab: ARGUMENT_ERROR\n')
+
+======================================================================
+FAIL: test_actual_process_stream_boundaries (test_lab.DeliveryTests.test_actual_process_stream_boundaries) (name='report-stdout')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\tests\test_lab.py", line 371, in test_actual_process_stream_boundaries
+    self.assertEqual(stderr, b"medialab: IO_ERROR\n")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: b'medialab: IO_ERROR\r\n' != b'medialab: IO_ERROR\n'
+
+======================================================================
+FAIL: test_actual_process_stream_boundaries (test_lab.DeliveryTests.test_actual_process_stream_boundaries) (name='help-stdout')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\tests\test_lab.py", line 371, in test_actual_process_stream_boundaries
+    self.assertEqual(stderr, b"medialab: IO_ERROR\n")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: b'medialab: IO_ERROR\r\n' != b'medialab: IO_ERROR\n'
+
+----------------------------------------------------------------------
+Ran 19 tests in 1.419s
+
+FAILED (failures=4, errors=3)

@@ -1,0 +1,25 @@
+test_actual_cli_and_fresh_alias_paths (test_lab.DeliveryTests.test_actual_cli_and_fresh_alias_paths) ... ok
+test_actual_empty_output_and_nul (test_lab.DeliveryTests.test_actual_empty_output_and_nul) ... ok
+test_actual_invalid_and_argument_diagnostics (test_lab.DeliveryTests.test_actual_invalid_and_argument_diagnostics) ... ok
+test_actual_parse_error_both_closed (test_lab.DeliveryTests.test_actual_parse_error_both_closed) ... ok
+test_actual_process_stream_boundaries (test_lab.DeliveryTests.test_actual_process_stream_boundaries) ... ok
+test_checked_help_and_redirection_seams (test_lab.DeliveryTests.test_checked_help_and_redirection_seams) ... ok
+test_checked_stdout_and_diagnostics_seams (test_lab.DeliveryTests.test_checked_stdout_and_diagnostics_seams) ... ok
+test_fresh_short_flush_close_cleanup_seams (test_lab.DeliveryTests.test_fresh_short_flush_close_cleanup_seams) ... ok
+test_reports_inert_and_bounded (test_lab.DeliveryTests.test_reports_inert_and_bounded) ... ok
+test_alias_cycle_and_tree_bounds (test_lab.ModelTests.test_alias_cycle_and_tree_bounds) ... ok
+test_capability_inventory (test_lab.ModelTests.test_capability_inventory) ... ok
+test_frozen_labels (test_lab.ModelTests.test_frozen_labels) ... ok
+test_independent_quality_table (test_lab.ModelTests.test_independent_quality_table) ... ok
+test_maximum_field_cardinality_stress (test_lab.ModelTests.test_maximum_field_cardinality_stress) ... ok
+test_no_native_hooks (test_lab.ModelTests.test_no_native_hooks) ... ok
+test_parser_authority_and_bounds (test_lab.ModelTests.test_parser_authority_and_bounds) ... ok
+test_quality_spellings (test_lab.ModelTests.test_quality_spellings) ... ok
+test_schema_and_fresh_provenance (test_lab.ModelTests.test_schema_and_fresh_provenance) ... ok
+test_schema_counts_identifiers_and_parameters (test_lab.ModelTests.test_schema_counts_identifiers_and_parameters) ... ok
+test_whole_validation_before_shortcuts (test_lab.ModelTests.test_whole_validation_before_shortcuts) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 4.635s
+
+OK

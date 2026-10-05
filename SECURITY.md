@@ -1,0 +1,13 @@
+# Security model
+
+This is a local, offline teaching model, not a deployed security boundary or HTTP implementation. Protected assets are predictable input handling, accurate declared results, inert reports and preservation of existing local files. Attacker-shaped inputs are normalized JSON/native declarations. Python runtime, application source, CLI arguments/paths, process streams and local host are trusted.
+
+Native admission uses exact built-in type identity before equality, hashing, iteration or serialization. It rejects subclasses, exotic class objects, cycles and invalid keys without deliberately invoking their hooks. This protection starts at the API call; constructing an object before that call is outside the boundary. Entire input validation precedes unsupported-context and server-policy shortcuts. Repeated aliases are counted per occurrence; active cycles are rejected.
+
+Bounds: 65,536 input bytes, container depth 8, 5,000 tree nodes, 100 entries per generic container, 256 characters per string and 10 decimal digits per native integer magnitude. The schema further narrows these limits, including 40 cases, 16 ranges, eight candidates and four parameters. Exact ASCII quality grammar avoids float rounding. Non-finite numbers, floats, duplicate JSON keys, invalid UTF-8, controls and surrogates are rejected. No silent truncation is used.
+
+Serialized reports are bounded to 524,288 bytes before delivery. Markdown encodes every derived character as a numeric entity; JSON uses ASCII escaping. Fresh exclusive files reject existing destinations; aliases are rejected. Short writes, flush/close and cleanup failures have explicit outcomes. Diagnostics use fixed codes without supplied paths or parser text. Failed output/diagnostic streams are silenced or detached to avoid buffered shutdown retries; tests distinguish operating-system pipe failures from closed Python objects and controlled seams.
+
+Residual risks: this is not a hostile-code sandbox, hard CPU/memory guarantee, safe execution environment or authorization system. Hostile filesystem races, partial stdout delivery, arbitrary OS failures and storage durability are not comprehensively prevented. File cleanup can itself fail and is reported. Unsupported declarations do not become proof of safety; hypothetical status codes do not describe real traffic.
+
+Use synthetic, non-sensitive declarations. There is no network service or telemetry. No real headers, credentials, employer/client data or private vulnerability evidence are required. Report suspected defects privately to the repository owner when a repository is published; no reporting address or hosted repository is established by this local work.

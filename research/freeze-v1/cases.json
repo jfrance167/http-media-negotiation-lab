@@ -1,0 +1,1173 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "absent-honor",
+      "accept": {
+        "state": "absent",
+        "ranges": []
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        },
+        {
+          "id": "json",
+          "type": "application",
+          "subtype": "json",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "absent-ignore",
+      "accept": {
+        "state": "absent",
+        "ranges": []
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        },
+        {
+          "id": "json",
+          "type": "application",
+          "subtype": "json",
+          "parameters": []
+        }
+      ],
+      "server_policy": "ignore",
+      "unsupported_features": []
+    },
+    {
+      "id": "absent-unknown-policy",
+      "accept": {
+        "state": "absent",
+        "ranges": []
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        },
+        {
+          "id": "json",
+          "type": "application",
+          "subtype": "json",
+          "parameters": []
+        }
+      ],
+      "server_policy": "unknown",
+      "unsupported_features": []
+    },
+    {
+      "id": "empty-honor",
+      "accept": {
+        "state": "present",
+        "ranges": []
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "empty-ignore",
+      "accept": {
+        "state": "present",
+        "ranges": []
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        }
+      ],
+      "server_policy": "ignore",
+      "unsupported_features": []
+    },
+    {
+      "id": "empty-unknown-policy",
+      "accept": {
+        "state": "present",
+        "ranges": []
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        }
+      ],
+      "server_policy": "unknown",
+      "unsupported_features": []
+    },
+    {
+      "id": "unknown-honor",
+      "accept": {
+        "state": "unknown",
+        "ranges": []
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "unknown-ignore",
+      "accept": {
+        "state": "unknown",
+        "ranges": []
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        }
+      ],
+      "server_policy": "ignore",
+      "unsupported_features": []
+    },
+    {
+      "id": "feature-absent",
+      "accept": {
+        "state": "absent",
+        "ranges": []
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": [
+        "language"
+      ]
+    },
+    {
+      "id": "parameter-absent",
+      "accept": {
+        "state": "absent",
+        "ranges": []
+      },
+      "candidates": [
+        {
+          "id": "plain",
+          "type": "text",
+          "subtype": "plain",
+          "parameters": [
+            {
+              "name": "charset",
+              "value": "utf-8"
+            }
+          ]
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "wildcard-parameter",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "*",
+            "parameters": [
+              {
+                "name": "format",
+                "value": "flowed"
+              }
+            ],
+            "q": "1"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "flowed",
+          "type": "text",
+          "subtype": "plain",
+          "parameters": [
+            {
+              "name": "format",
+              "value": "flowed"
+            }
+          ]
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "other-type-parameter",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": "1"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": [
+            {
+              "name": "format",
+              "value": "fixed"
+            }
+          ]
+        }
+      ],
+      "server_policy": "ignore",
+      "unsupported_features": []
+    },
+    {
+      "id": "unknown-format-value",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [],
+            "q": "1"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "plain",
+          "type": "text",
+          "subtype": "plain",
+          "parameters": [
+            {
+              "name": "format",
+              "value": "novel"
+            }
+          ]
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "combined-global-reasons",
+      "accept": {
+        "state": "unknown",
+        "ranges": []
+      },
+      "candidates": [
+        {
+          "id": "plain",
+          "type": "text",
+          "subtype": "plain",
+          "parameters": [
+            {
+              "name": "charset",
+              "value": "utf-8"
+            }
+          ]
+        }
+      ],
+      "server_policy": "unknown",
+      "unsupported_features": [
+        "language"
+      ]
+    },
+    {
+      "id": "duplicate-conflict",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": "0"
+          },
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": "1"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "duplicate-equal",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": "0.5"
+          },
+          {
+            "type": "TEXT",
+            "subtype": "HTML",
+            "parameters": [],
+            "q": "0.500"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "exact-zero-overrides-wildcard",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "*",
+            "subtype": "*",
+            "parameters": [],
+            "q": "1"
+          },
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": "0"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        },
+        {
+          "id": "json",
+          "type": "application",
+          "subtype": "json",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "specificity-before-quality",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "*",
+            "parameters": [],
+            "q": "0.9"
+          },
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": "0.2"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        },
+        {
+          "id": "plain",
+          "type": "text",
+          "subtype": "plain",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "format-tier",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [],
+            "q": "0.7"
+          },
+          {
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [
+              {
+                "name": "format",
+                "value": "flowed"
+              }
+            ],
+            "q": null
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "flowed",
+          "type": "text",
+          "subtype": "plain",
+          "parameters": [
+            {
+              "name": "format",
+              "value": "flowed"
+            }
+          ]
+        },
+        {
+          "id": "fixed",
+          "type": "text",
+          "subtype": "plain",
+          "parameters": [
+            {
+              "name": "format",
+              "value": "fixed"
+            }
+          ]
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "no-implicit-format",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [
+              {
+                "name": "format",
+                "value": "fixed"
+              }
+            ],
+            "q": "0.4"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "plain",
+          "type": "text",
+          "subtype": "plain",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "zero-trailing-dot",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": "0."
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "one-three-zeroes",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": "1.000"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "exact-thousandths",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": "0.333"
+          },
+          {
+            "type": "application",
+            "subtype": "json",
+            "parameters": [],
+            "q": "0.334"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        },
+        {
+          "id": "json",
+          "type": "application",
+          "subtype": "json",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "default-one-equivalence",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": null
+          },
+          {
+            "type": "application",
+            "subtype": "json",
+            "parameters": [],
+            "q": "1"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        },
+        {
+          "id": "json",
+          "type": "application",
+          "subtype": "json",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "literal-plus-subtype",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "application",
+            "subtype": "problem+json",
+            "parameters": [],
+            "q": "0.8"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "json",
+          "type": "application",
+          "subtype": "json",
+          "parameters": []
+        },
+        {
+          "id": "problem",
+          "type": "application",
+          "subtype": "problem+json",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "all-wildcard",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "*",
+            "subtype": "*",
+            "parameters": [],
+            "q": "0.4"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "image",
+          "type": "image",
+          "subtype": "jpeg",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "type-wildcard",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "*",
+            "parameters": [],
+            "q": "0.6"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "plain",
+          "type": "text",
+          "subtype": "plain",
+          "parameters": []
+        },
+        {
+          "id": "image",
+          "type": "image",
+          "subtype": "jpeg",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "case-type-subtype",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "TeXt",
+            "subtype": "HtMl",
+            "parameters": [],
+            "q": "0.7"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "TEXT",
+          "subtype": "HTML",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "case-format",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "TEXT",
+            "subtype": "PLAIN",
+            "parameters": [
+              {
+                "name": "FORMAT",
+                "value": "FLOWED"
+              }
+            ],
+            "q": "0.8"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "flowed",
+          "type": "text",
+          "subtype": "plain",
+          "parameters": [
+            {
+              "name": "Format",
+              "value": "Flowed"
+            }
+          ]
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "no-match",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": "1"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "json",
+          "type": "application",
+          "subtype": "json",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "format-mismatch",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [
+              {
+                "name": "format",
+                "value": "fixed"
+              }
+            ],
+            "q": "0.4"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "flowed",
+          "type": "text",
+          "subtype": "plain",
+          "parameters": [
+            {
+              "name": "format",
+              "value": "flowed"
+            }
+          ]
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "two-format-values",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [
+              {
+                "name": "format",
+                "value": "flowed"
+              }
+            ],
+            "q": "0.7"
+          },
+          {
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [
+              {
+                "name": "format",
+                "value": "fixed"
+              }
+            ],
+            "q": "0.3"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "flowed",
+          "type": "text",
+          "subtype": "plain",
+          "parameters": [
+            {
+              "name": "format",
+              "value": "flowed"
+            }
+          ]
+        },
+        {
+          "id": "fixed",
+          "type": "text",
+          "subtype": "plain",
+          "parameters": [
+            {
+              "name": "format",
+              "value": "fixed"
+            }
+          ]
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "plain-range-matches-parameterized",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "plain",
+            "parameters": [],
+            "q": "0.25"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "flowed",
+          "type": "text",
+          "subtype": "plain",
+          "parameters": [
+            {
+              "name": "format",
+              "value": "flowed"
+            }
+          ]
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "equal-quality-tier-tie",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": "0.5"
+          },
+          {
+            "type": "*",
+            "subtype": "*",
+            "parameters": [],
+            "q": "0.5"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        },
+        {
+          "id": "json",
+          "type": "application",
+          "subtype": "json",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "candidate-order-tie",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": "0.5"
+          },
+          {
+            "type": "*",
+            "subtype": "*",
+            "parameters": [],
+            "q": "0.5"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "json",
+          "type": "application",
+          "subtype": "json",
+          "parameters": []
+        },
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "range-order-independent",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": "0.2"
+          },
+          {
+            "type": "text",
+            "subtype": "*",
+            "parameters": [],
+            "q": "0.9"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        },
+        {
+          "id": "plain",
+          "type": "text",
+          "subtype": "plain",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "lower-tier-conflict-irrelevant",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "*",
+            "parameters": [],
+            "q": "0.1"
+          },
+          {
+            "type": "text",
+            "subtype": "*",
+            "parameters": [],
+            "q": "0.9"
+          },
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": "0.8"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        }
+      ],
+      "server_policy": "honor",
+      "unsupported_features": []
+    },
+    {
+      "id": "conflict-preserves-other-math",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": "0"
+          },
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": "1"
+          },
+          {
+            "type": "application",
+            "subtype": "json",
+            "parameters": [],
+            "q": "1"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        },
+        {
+          "id": "json",
+          "type": "application",
+          "subtype": "json",
+          "parameters": []
+        }
+      ],
+      "server_policy": "ignore",
+      "unsupported_features": []
+    },
+    {
+      "id": "zero-ignored-server",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": "0"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        }
+      ],
+      "server_policy": "ignore",
+      "unsupported_features": []
+    },
+    {
+      "id": "unknown-server-known-unique",
+      "accept": {
+        "state": "present",
+        "ranges": [
+          {
+            "type": "text",
+            "subtype": "html",
+            "parameters": [],
+            "q": "1"
+          }
+        ]
+      },
+      "candidates": [
+        {
+          "id": "html",
+          "type": "text",
+          "subtype": "html",
+          "parameters": []
+        },
+        {
+          "id": "json",
+          "type": "application",
+          "subtype": "json",
+          "parameters": []
+        }
+      ],
+      "server_policy": "unknown",
+      "unsupported_features": []
+    }
+  ]
+}

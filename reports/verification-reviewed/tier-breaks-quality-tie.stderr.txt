@@ -1,0 +1,104 @@
+test_actual_cli_and_fresh_alias_paths (test_lab.DeliveryTests.test_actual_cli_and_fresh_alias_paths) ... FAIL
+test_actual_empty_output_and_nul (test_lab.DeliveryTests.test_actual_empty_output_and_nul) ... ok
+test_actual_invalid_and_argument_diagnostics (test_lab.DeliveryTests.test_actual_invalid_and_argument_diagnostics) ... ok
+test_actual_parse_error_both_closed (test_lab.DeliveryTests.test_actual_parse_error_both_closed) ... ok
+test_actual_process_stream_boundaries (test_lab.DeliveryTests.test_actual_process_stream_boundaries) ... ok
+test_checked_help_and_redirection_seams (test_lab.DeliveryTests.test_checked_help_and_redirection_seams) ... ok
+test_checked_stdout_and_diagnostics_seams (test_lab.DeliveryTests.test_checked_stdout_and_diagnostics_seams) ... ok
+test_fresh_short_flush_close_cleanup_seams (test_lab.DeliveryTests.test_fresh_short_flush_close_cleanup_seams) ... ok
+test_reports_inert_and_bounded (test_lab.DeliveryTests.test_reports_inert_and_bounded) ... FAIL
+test_alias_cycle_and_tree_bounds (test_lab.ModelTests.test_alias_cycle_and_tree_bounds) ... ok
+test_capability_inventory (test_lab.ModelTests.test_capability_inventory) ... ok
+test_frozen_labels (test_lab.ModelTests.test_frozen_labels) ... 
+  test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='equal-quality-tier-tie') ... FAIL
+  test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='candidate-order-tie') ... FAIL
+test_frozen_labels (test_lab.ModelTests.test_frozen_labels) ... FAIL
+test_independent_quality_table (test_lab.ModelTests.test_independent_quality_table) ... FAIL
+test_maximum_field_cardinality_stress (test_lab.ModelTests.test_maximum_field_cardinality_stress) ... ok
+test_no_native_hooks (test_lab.ModelTests.test_no_native_hooks) ... ok
+test_parser_authority_and_bounds (test_lab.ModelTests.test_parser_authority_and_bounds) ... ok
+test_quality_spellings (test_lab.ModelTests.test_quality_spellings) ... ok
+test_schema_and_fresh_provenance (test_lab.ModelTests.test_schema_and_fresh_provenance) ... FAIL
+test_schema_counts_identifiers_and_parameters (test_lab.ModelTests.test_schema_counts_identifiers_and_parameters) ... ok
+test_whole_validation_before_shortcuts (test_lab.ModelTests.test_whole_validation_before_shortcuts) ... ok
+
+======================================================================
+FAIL: test_actual_cli_and_fresh_alias_paths (test_lab.DeliveryTests.test_actual_cli_and_fresh_alias_paths)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\tests\test_lab.py", line 326, in test_actual_cli_and_fresh_alias_paths
+    self.assertEqual(json.loads(result.stdout), EXPECTED)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'ver[23897 chars]e': 'UNIQUE_BEST', 'candidates': [{'id': 'html[6130 chars]r.']} != {'ver[23897 chars]e': 'TIED_BEST', 'candidates': [{'id': 'html',[6142 chars]r.']}
+Diff is 69858 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_reports_inert_and_bounded (test_lab.DeliveryTests.test_reports_inert_and_bounded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\tests\test_lab.py", line 309, in test_reports_inert_and_bounded
+    self.assertEqual(json.loads(report.encode(evaluated)), EXPECTED)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'ver[23897 chars]e': 'UNIQUE_BEST', 'candidates': [{'id': 'html[6130 chars]r.']} != {'ver[23897 chars]e': 'TIED_BEST', 'candidates': [{'id': 'html',[6142 chars]r.']}
+Diff is 69858 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='equal-quality-tier-tie')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\tests\test_lab.py", line 66, in test_frozen_labels
+    self.assertEqual(actual, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[76 chars]e': 'UNIQUE_BEST', 'candidates': [{'id': 'html[756 chars] []}} != {'id'[76 chars]e': 'TIED_BEST', 'candidates': [{'id': 'html',[762 chars] []}}
+Diff is 1914 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels) (case='candidate-order-tie')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\tests\test_lab.py", line 66, in test_frozen_labels
+    self.assertEqual(actual, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'id'[73 chars]e': 'UNIQUE_BEST', 'candidates': [{'id': 'json[756 chars] []}} != {'id'[73 chars]e': 'TIED_BEST', 'candidates': [{'id': 'json',[762 chars] []}}
+Diff is 1981 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_frozen_labels (test_lab.ModelTests.test_frozen_labels)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\tests\test_lab.py", line 67, in test_frozen_labels
+    self.assertEqual(result, EXPECTED)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'ver[23897 chars]e': 'UNIQUE_BEST', 'candidates': [{'id': 'html[6130 chars]r.']} != {'ver[23897 chars]e': 'TIED_BEST', 'candidates': [{'id': 'html',[6142 chars]r.']}
+Diff is 69858 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_independent_quality_table (test_lab.ModelTests.test_independent_quality_table)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\tests\test_lab.py", line 90, in test_independent_quality_table
+    self.assertEqual(result["best_candidate_ids"], expected_ids)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['html'] != ['html', 'json']
+
+Second list contains 1 additional elements.
+First extra element 1:
+'json'
+
+- ['html']
++ ['html', 'json']
+
+======================================================================
+FAIL: test_schema_and_fresh_provenance (test_lab.ModelTests.test_schema_and_fresh_provenance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\tests\test_lab.py", line 111, in test_schema_and_fresh_provenance
+    self.assertEqual(evaluate(CASES), EXPECTED)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'ver[23897 chars]e': 'UNIQUE_BEST', 'candidates': [{'id': 'html[6130 chars]r.']} != {'ver[23897 chars]e': 'TIED_BEST', 'candidates': [{'id': 'html',[6142 chars]r.']}
+Diff is 69858 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 20 tests in 4.085s
+
+FAILED (failures=7)

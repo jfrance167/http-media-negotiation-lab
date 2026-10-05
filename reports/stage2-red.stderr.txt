@@ -1,0 +1,108 @@
+test_alias_cycle_and_tree_bounds (test_lab.ModelTests.test_alias_cycle_and_tree_bounds) ... FAIL
+test_capability_inventory (test_lab.ModelTests.test_capability_inventory) ... ok
+test_frozen_labels (test_lab.ModelTests.test_frozen_labels) ... ERROR
+test_independent_quality_table (test_lab.ModelTests.test_independent_quality_table) ... ok
+test_no_native_hooks (test_lab.ModelTests.test_no_native_hooks) ... ok
+test_parser_authority_and_bounds (test_lab.ModelTests.test_parser_authority_and_bounds) ... ok
+test_quality_spellings (test_lab.ModelTests.test_quality_spellings) ... ok
+test_schema_and_fresh_provenance (test_lab.ModelTests.test_schema_and_fresh_provenance) ... ERROR
+test_schema_counts_identifiers_and_parameters (test_lab.ModelTests.test_schema_counts_identifiers_and_parameters) ... ok
+test_whole_validation_before_shortcuts (test_lab.ModelTests.test_whole_validation_before_shortcuts) ... ok
+
+======================================================================
+ERROR: test_frozen_labels (test_lab.ModelTests.test_frozen_labels)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\tests\test_lab.py", line 23, in test_frozen_labels
+    result = evaluate(parse((ROOT / "fixtures/cases.json").read_bytes()))
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\model.py", line 112, in evaluate
+    validate(document)
+    ~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 186, in validate
+    _walk(document, 1, [0], set())
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 63, in _walk
+    _walk(item, depth + 1, budget, active)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 66, in _walk
+    _walk(item, depth + 1, budget, active)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 63, in _walk
+    _walk(item, depth + 1, budget, active)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 63, in _walk
+    _walk(item, depth + 1, budget, active)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 66, in _walk
+    _walk(item, depth + 1, budget, active)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 63, in _walk
+    _walk(item, depth + 1, budget, active)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 66, in _walk
+    _walk(item, depth + 1, budget, active)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 63, in _walk
+    _walk(item, depth + 1, budget, active)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 42, in _walk
+    raise Invalid("TREE_DEPTH")
+medialab.contracts.Invalid: TREE_DEPTH
+
+======================================================================
+ERROR: test_schema_and_fresh_provenance (test_lab.ModelTests.test_schema_and_fresh_provenance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\tests\test_lab.py", line 57, in test_schema_and_fresh_provenance
+    report = evaluate(CASES)
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\model.py", line 112, in evaluate
+    validate(document)
+    ~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 186, in validate
+    _walk(document, 1, [0], set())
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 63, in _walk
+    _walk(item, depth + 1, budget, active)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 66, in _walk
+    _walk(item, depth + 1, budget, active)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 63, in _walk
+    _walk(item, depth + 1, budget, active)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 63, in _walk
+    _walk(item, depth + 1, budget, active)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 66, in _walk
+    _walk(item, depth + 1, budget, active)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 63, in _walk
+    _walk(item, depth + 1, budget, active)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 66, in _walk
+    _walk(item, depth + 1, budget, active)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 63, in _walk
+    _walk(item, depth + 1, budget, active)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\medialab\contracts.py", line 42, in _walk
+    raise Invalid("TREE_DEPTH")
+medialab.contracts.Invalid: TREE_DEPTH
+
+======================================================================
+FAIL: test_alias_cycle_and_tree_bounds (test_lab.ModelTests.test_alias_cycle_and_tree_bounds)
+----------------------------------------------------------------------
+medialab.contracts.Invalid: SCHEMA
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jake\OneDrive - Alfred State College\Documents\New project\http-media-negotiation-lab\tests\test_lab.py", line 203, in test_alias_cycle_and_tree_bounds
+    with self.assertRaisesRegex(Invalid, "^INPUT_LIMIT$"):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: "^INPUT_LIMIT$" does not match "SCHEMA"
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.028s
+
+FAILED (failures=1, errors=2)

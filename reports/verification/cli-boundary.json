@@ -1,0 +1,242 @@
+[
+  {
+    "name": "parse-error-both",
+    "kind": "physical_pipe_barrier",
+    "optimized": false,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "parse-error-both",
+    "kind": "python_stream_close",
+    "optimized": false,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "missing-stderr",
+    "kind": "physical_pipe_barrier",
+    "optimized": false,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "missing-both",
+    "kind": "physical_pipe_barrier",
+    "optimized": false,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "usage-both",
+    "kind": "physical_pipe_barrier",
+    "optimized": false,
+    "exit_code": 2,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "empty-input-both",
+    "kind": "physical_pipe_barrier",
+    "optimized": false,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "report-stdout",
+    "kind": "physical_pipe_barrier",
+    "optimized": false,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 19
+  },
+  {
+    "name": "report-both",
+    "kind": "physical_pipe_barrier",
+    "optimized": false,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "help-alive",
+    "kind": "physical_pipe_barrier",
+    "optimized": false,
+    "exit_code": 0,
+    "stdout_bytes": 312,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "help-stdout",
+    "kind": "physical_pipe_barrier",
+    "optimized": false,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 19
+  },
+  {
+    "name": "help-both",
+    "kind": "physical_pipe_barrier",
+    "optimized": false,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "dirty-report",
+    "kind": "python_stream_close",
+    "optimized": false,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "dirty-missing",
+    "kind": "python_stream_close",
+    "optimized": false,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "dirty-usage",
+    "kind": "python_stream_close",
+    "optimized": false,
+    "exit_code": 2,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "dirty-help",
+    "kind": "python_stream_close",
+    "optimized": false,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "parse-error-both",
+    "kind": "physical_pipe_barrier",
+    "optimized": true,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "parse-error-both",
+    "kind": "python_stream_close",
+    "optimized": true,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "missing-stderr",
+    "kind": "physical_pipe_barrier",
+    "optimized": true,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "missing-both",
+    "kind": "physical_pipe_barrier",
+    "optimized": true,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "usage-both",
+    "kind": "physical_pipe_barrier",
+    "optimized": true,
+    "exit_code": 2,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "empty-input-both",
+    "kind": "physical_pipe_barrier",
+    "optimized": true,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "report-stdout",
+    "kind": "physical_pipe_barrier",
+    "optimized": true,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 19
+  },
+  {
+    "name": "report-both",
+    "kind": "physical_pipe_barrier",
+    "optimized": true,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "help-alive",
+    "kind": "physical_pipe_barrier",
+    "optimized": true,
+    "exit_code": 0,
+    "stdout_bytes": 312,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "help-stdout",
+    "kind": "physical_pipe_barrier",
+    "optimized": true,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 19
+  },
+  {
+    "name": "help-both",
+    "kind": "physical_pipe_barrier",
+    "optimized": true,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "dirty-report",
+    "kind": "python_stream_close",
+    "optimized": true,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "dirty-missing",
+    "kind": "python_stream_close",
+    "optimized": true,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "dirty-usage",
+    "kind": "python_stream_close",
+    "optimized": true,
+    "exit_code": 2,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  {
+    "name": "dirty-help",
+    "kind": "python_stream_close",
+    "optimized": true,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  }
+]

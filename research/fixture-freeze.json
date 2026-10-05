@@ -1,0 +1,25 @@
+{
+  "supported": 27,
+  "cases": 40,
+  "unsupported": 13,
+  "records": [
+    {
+      "bytes": 7188,
+      "sha256": "C7D6EFD8B04A5BE25F25A38EF6B318295C58AA54920D02D8104259AA577C8696",
+      "path": "CONTRACT.md"
+    },
+    {
+      "bytes": 24344,
+      "sha256": "BFB61DDFE12AC04083C17577CC0AD005061EB42F61119449DCD33BE796DD4B91",
+      "path": "fixtures/cases.json"
+    },
+    {
+      "bytes": 51694,
+      "sha256": "BB1B1AAF6E094C24B3B1DE1994C884CD8A0112DCBB96F5E1227EA1DA8D039231",
+      "path": "fixtures/expected.json"
+    }
+  ],
+  "date": "2026-10-05",
+  "phase": "after-explicit-container-depth-definition-correction",
+  "expectations": "Input and full expected bytes unchanged; original contract/receipt retained at research/freeze-v1"
+}

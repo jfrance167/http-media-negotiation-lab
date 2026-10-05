@@ -1,0 +1,18 @@
+[
+  {
+    "input_bytes": 60367,
+    "json_bytes": 191828,
+    "markdown_bytes": 628849,
+    "admitted_cases": 18,
+    "markdown_cap_reachable": true,
+    "maximum_report_proven": false
+  },
+  {
+    "input_bytes": 60367,
+    "json_bytes": 191828,
+    "markdown_bytes": 628849,
+    "admitted_cases": 18,
+    "markdown_cap_reachable": true,
+    "maximum_report_proven": false
+  }
+]
